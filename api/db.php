@@ -147,7 +147,7 @@ class DB{
 }
 
 function q($sql){
-    $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=db13",'root','');
+    $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=db15-2",'root','');
     return $pdo->query($sql)->fetchAll();
 }
 
@@ -162,8 +162,9 @@ function to($url){
 }
 
 $Total=new DB('total');
-$User=new DB('user');
-$News= new DB('news');
+$User=new DB('users');
+$News=new DB('news');
+$Que=new DB('que');
 
 
 if(!isset($_SESSION['view'])){

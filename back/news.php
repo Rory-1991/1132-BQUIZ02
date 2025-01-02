@@ -71,7 +71,7 @@ function edit(){
              .map((idx,item)=>$(item).val()).get();
 
   $.post("./api/edit_news.php",{ids,sh,del},(res)=>{
-    //console.log(res);
+    // console.log(res);
     location.reload();
   })
                  
