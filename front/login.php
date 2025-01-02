@@ -11,7 +11,7 @@
         </tr>
         <tr>
             <td>
-                <input type="submit" value="登入">
+                <input type="submit" value="登入" onclick="login()">
                 <input type="reset" value="清除" onclick='restForm()'>
             </td>
             <td>
@@ -38,12 +38,14 @@
                     $.post("./api/chk_pw.php",user,(res)=>{
                         console.log("login => ",res)
                         if(parseInt(res)==1){
-                            if(user,acc=='admin'){
+                            if(user.acc=='admin'){
                                 location.href='admin.php';
                             }else{
                             location.href='index.php';
+                            }
                         }else{
                             alert("密碼錯誤");
+                            restForm();
                         }
                     })
                 }
