@@ -30,13 +30,13 @@
         }
 
             $.get("./api/chk_acc.php",{acc:user.acc},(res)=>{
-                console.log("chk acc => ",res)
+                // console.log("chk acc => ",res)
                 if(parseInt(res)==0){
                     alert("查無帳號");
                     restForm();
                 }else{
                     $.post("./api/chk_pw.php",user,(res)=>{
-                        console.log("login => ",res)
+                        // console.log("login => ",res)
                         if(parseInt(res)==1){
                             if(user.acc=='admin'){
                                 location.href='admin.php';
