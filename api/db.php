@@ -162,7 +162,7 @@ function to($url){
 }
 
 $Total=new DB('total');
-$User=new BD('user');
+$User=new DB('user');
 
 
 if(!isset($_SESSION['view'])){

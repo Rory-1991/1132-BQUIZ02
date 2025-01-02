@@ -62,7 +62,7 @@ function restForm(){
     $("#acc").val("")
     $("#pw").val("")
     $("#pw2").val("")
-    $("#eamil").val("")
+    $("#email").val("")
 }
 
 </script>
