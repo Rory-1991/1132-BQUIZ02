@@ -46,7 +46,7 @@
 						</marquee>
 					</div>
 					<span style="width:23%; display:inline-block;">
-					 	<?php if(!isset($_SESSION['user'])):?>
+						<?php if(!isset($_SESSION['user'])):?>
 							<a href="index.php?do=login">會員登入</a>
 						<?php else:?>
 							歡迎,<?=$_SESSION['user'];?>
