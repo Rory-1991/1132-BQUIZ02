@@ -17,7 +17,6 @@ class DB{
         $this->pdo=new PDO($this->dsn,'root','');
     }
 
-
     /**
      * 撈出全部資料
      * 1. 整張資料表
